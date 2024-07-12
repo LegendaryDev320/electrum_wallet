@@ -1,0 +1,29 @@
+<%- include('partial/header') %>
+<body>
+
+    <div class="container">
+        <header>
+            <h2 class="text-center">Create Account</h2>
+        </header>
+        <div class="transaction-history">
+                <% { %>
+                    <% if(newWallet.message === 'Success')
+                     { %>
+                         <h3 class="text-center">Your account is created successfully.</h3>
+                         <div class="mt-4" style="margin-left:55px;">
+                             <h4><strong>Pass phrase:</strong> <%= newWallet.Mnemonic %></h4>
+                             <h4><strong>Address:</strong> <%= newWallet.Address %></h4>
+                             <h4><strong>Private Key:</strong> <%= newWallet.PrivateKey %></h4>
+                         </div>
+                     <% }
+                     else{ %>
+                         <h3>Something went wrong while creating the account.</h3>
+                    <% } %>
+                    
+                <% } %>
+        </div>
+    </div>
+
+</body>
+
+<%- include('partial/footer') %>

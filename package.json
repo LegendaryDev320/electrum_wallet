@@ -1,10 +1,17 @@
 {
-  "name": "electrum-wallet",
+  "name": "electrum_wallet",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
   "dependencies": {
-    "ethereum-cryptography": "^1.0.3",
-    "ethers": "^5.6.8"
+    "body-parser": "^1.20.2",
+    "ejs": "^3.1.10",
+    "ethers": "^6.13.1",
+    "express": "^4.19.2"
   }
 }
